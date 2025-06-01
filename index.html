@@ -3,88 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Roblox Avatar Copier</title>
+    <title>Roblox Avatar Copier - Privacy Policy</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
         }
-        h1, h2 {
-            color: #0066cc;
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            border-bottom: 2px solid #eee;
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
             padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            font-weight: 600;
         }
-        h2 {
-            margin-top: 30px;
+
+        .section h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            font-weight: 600;
         }
-        p {
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-left: 20px;
             margin-bottom: 15px;
         }
-        ul {
-            margin-bottom: 20px;
+
+        .section li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
         }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+
         .footer {
-            margin-top: 50px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #fff;
             font-size: 0.9em;
-            color: #666;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+
+        .last-updated {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header, .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for Roblox Avatar Copier</h1>
-    <p>Last Updated: May 14, 2025</p>
-    
-    <p>This Privacy Policy describes how Roblox Avatar Copier ("we", "our", or "extension") collects, uses, and protects information when you use our Chrome extension.</p>
-    
-    <h2>Information We Collect</h2>
-    <p>Our extension collects the following types of information:</p>
-    <ul>
-        <li><strong>Authentication Information:</strong> We access Roblox authentication cookies to make authenticated API requests to Roblox's servers. This is necessary to verify item ownership and apply avatar changes to your account.</li>
-        <li><strong>Web History:</strong> We detect when you are on Roblox avatar pages to enable the extension's functionality.</li>
-        <li><strong>User Activity:</strong> We monitor your interactions with the Roblox site related to avatar selections and customizations.</li>
-        <li><strong>Website Content:</strong> We read and process content from Roblox pages, including avatar information and item lists.</li>
-    </ul>
-    
-    <h2>How We Use Your Information</h2>
-    <p>The information we collect is used solely for the purpose of:</p>
-    <ul>
-        <li>Enabling you to copy avatars from other Roblox users</li>
-        <li>Checking which items you already own</li>
-        <li>Showing you which items you need to purchase</li>
-        <li>Applying avatar changes to your Roblox account</li>
-        <li>Saving your preferences for the extension</li>
-    </ul>
-    
-    <h2>Data Storage</h2>
-    <p>All data is stored locally on your device using Chrome's storage API. We do not transmit your data to our servers. The only external communications are with official Roblox API endpoints.</p>
-    
-    <h2>Third-Party Sharing</h2>
-    <p>We do not share your information with any third parties. All communication is strictly between the extension and official Roblox servers.</p>
-    
-    <h2>User Controls</h2>
-    <p>You can control your data in the following ways:</p>
-    <ul>
-        <li>Clear the extension's cache through the settings panel</li>
-        <li>Disable or remove the extension at any time through Chrome's extension management</li>
-        <li>Adjust which permissions the extension has access to in Chrome's extension settings</li>
-    </ul>
-    
-    <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-    
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at: muhammedtalha4521@gmail.com</p>
-    
-    <div class="footer">
-        <p>© 2025 Roblox Avatar Copier. All rights reserved.</p>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Privacy Policy</h1>
+            <p>Roblox Avatar Copier Browser Extension</p>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> December 2024
+            </div>
+
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>
+                    Welcome to Roblox Avatar Copier! This Privacy Policy explains how we collect, use, and protect your information when you use our browser extension. We are committed to protecting your privacy and ensuring transparency about our data practices.
+                </p>
+                <div class="highlight">
+                    <strong>Important:</strong> Roblox Avatar Copier is not affiliated with, endorsed by, or sponsored by Roblox Corporation. We are an independent third-party extension designed to enhance your Roblox experience.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. Information We Collect</h2>
+                
+                <h3>2.1 Data Stored Locally</h3>
+                <p>Our extension stores the following information locally in your browser:</p>
+                <ul>
+                    <li><strong>User Preferences:</strong> Language settings, theme preferences (including premium themes), dark mode settings</li>
+                    <li><strong>Avatar Cache:</strong> Temporarily cached avatar data for improved performance</li>
+                    <li><strong>Usage Settings:</strong> Last used profile ID, advanced settings configurations</li>
+                    <li><strong>Authentication Data:</strong> Roblox authentication cookies (only when you're logged into Roblox)</li>
+                    <li><strong>Theme Data:</strong> Information about purchased premium themes and theme preferences</li>
+                </ul>
+
+                <h3>2.2 Data We Access</h3>
+                <p>To provide our services, we access:</p>
+                <ul>
+                    <li><strong>Roblox Profile Information:</strong> Public avatar data, item information, and outfit details</li>
+                    <li><strong>Inventory Data:</strong> Information about items you own (to check missing items)</li>
+                    <li><strong>Clipboard Data:</strong> Only when you choose to paste profile URLs or user IDs</li>
+                    <li><strong>Active Tab Information:</strong> Only when you're on Roblox-related pages</li>
+                </ul>
+
+                <h3>2.3 Data We Do NOT Collect</h3>
+                <ul>
+                    <li>Personal identification information (name, email, phone number)</li>
+                    <li>Roblox account passwords</li>
+                    <li>Payment information</li>
+                    <li>Browsing history outside of Roblox</li>
+                    <li>Personal messages or chat logs</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. How We Use Your Information</h2>
+                
+                <h3>3.1 Core Functionality</h3>
+                <ul>
+                    <li>Copy Roblox avatars to your account</li>
+                    <li>Preview avatars before copying</li>
+                    <li>Check which items you own vs. missing items</li>
+                    <li>Apply avatar changes to your Roblox account</li>
+                    <li>Manage premium themes and customization options</li>
+                </ul>
+
+                <h3>3.2 Enhanced User Experience</h3>
+                <ul>
+                    <li>Remember your language and theme preferences</li>
+                    <li>Cache avatar data for faster loading</li>
+                    <li>Provide automatic language detection</li>
+                    <li>Enable premium theme features and customizations</li>
+                    <li>Store advanced settings for optimal performance</li>
+                </ul>
+
+                <h3>3.3 Performance Optimization</h3>
+                <ul>
+                    <li>Cache frequently accessed data to reduce API calls</li>
+                    <li>Optimize loading times for better user experience</li>
+                    <li>Manage batch processing for multiple items</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>4. Data Storage and Security</h2>
+                
+                <h3>4.1 Local Storage</h3>
+                <p>
+                    All your data is stored locally in your browser using Chrome's extension storage API. This means:
+                </p>
+                <ul>
+                    <li>Your data never leaves your device</li>
+                    <li>We cannot access your personal information</li>
+                    <li>Data is encrypted by your browser</li>
+                    <li>You have full control over your data</li>
+                </ul>
+
+                <h3>4.2 Security Measures</h3>
+                <ul>
+                    <li><strong>No External Servers:</strong> We don't store any of your data on external servers</li>
+                    <li><strong>Minimal Permissions:</strong> We only request permissions necessary for core functionality</li>
+                    <li><strong>Secure API Usage:</strong> All Roblox API interactions use official, secure endpoints</li>
+                    <li><strong>Cookie Protection:</strong> Authentication cookies are handled securely and never transmitted</li>
+                </ul>
+
+                <h3>4.3 Data Retention</h3>
+                <p>
+                    Data is retained locally until you:
+                </p>
+                <ul>
+                    <li>Uninstall the extension</li>
+                    <li>Clear your browser data</li>
+                    <li>Manually reset extension settings</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Third-Party Services</h2>
+                
+                <h3>5.1 Roblox Integration</h3>
+                <p>
+                    Our extension interacts with Roblox's official APIs and website to provide its functionality. This interaction is subject to Roblox's own privacy policy and terms of service.
+                </p>
+
+                <h3>5.2 No Analytics or Tracking</h3>
+                <p>
+                    We do not use any third-party analytics, tracking, or advertising services. Your usage patterns and personal data are not collected or shared with any external parties.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>6. Your Rights and Controls</h2>
+                
+                <h3>6.1 Data Control</h3>
+                <p>You have complete control over your data:</p>
+                <ul>
+                    <li><strong>Access:</strong> View all stored data through extension settings</li>
+                    <li><strong>Modify:</strong> Change preferences and settings at any time</li>
+                    <li><strong>Delete:</strong> Clear cache and reset settings</li>
+                    <li><strong>Export:</strong> Data can be backed up through browser sync</li>
+                </ul>
+
+                <h3>6.2 Permission Management</h3>
+                <p>
+                    You can manage extension permissions through your browser settings:
+                </p>
+                <ul>
+                    <li>Disable clipboard access</li>
+                    <li>Restrict site access</li>
+                    <li>Remove extension entirely</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>7. Premium Features</h2>
+                <p>
+                    Our extension includes premium themes and advanced features. Information about purchased themes is stored locally and is not transmitted to external servers. Premium feature access is managed through secure local verification methods.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>8. Children's Privacy</h2>
+                <p>
+                    Our extension is designed to be safe for users of all ages. We do not knowingly collect personal information from children under 13. Since all data is stored locally and we don't collect personal information, our extension provides a safe environment for younger users.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>9. Changes to This Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make changes:
+                </p>
+                <ul>
+                    <li>We will update the "Last Updated" date</li>
+                    <li>Significant changes will be communicated through extension updates</li>
+                    <li>Continued use of the extension constitutes acceptance of changes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>10. Contact Information</h2>
+                <div class="contact-info">
+                    <p>
+                        If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
+                    </p>
+                    <ul>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/muhammedtalha04/roblox-avatar-copier" target="_blank">github.com/muhammedtalha04/roblox-avatar-copier</a></li>
+                        <li><strong>Issues:</strong> Report issues or ask questions through our GitHub Issues page</li>
+                        <li><strong>Email:</strong> For privacy-related inquiries, please use our GitHub contact methods</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>11. Legal Compliance</h2>
+                <p>
+                    This Privacy Policy is designed to comply with:
+                </p>
+                <ul>
+                    <li>General Data Protection Regulation (GDPR)</li>
+                    <li>California Consumer Privacy Act (CCPA)</li>
+                    <li>Chrome Web Store Developer Policies</li>
+                    <li>Other applicable privacy laws and regulations</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <h3>🔐 Summary</h3>
+                <p>
+                    <strong>Your privacy is our priority.</strong> Roblox Avatar Copier stores all data locally on your device, never transmits personal information to external servers, and gives you complete control over your data. We only access the minimum information necessary to provide our avatar copying functionality.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Roblox Avatar Copier | Independent Third-Party Extension</p>
+            <p>Not affiliated with Roblox Corporation</p>
+        </div>
     </div>
 </body>
 </html>
